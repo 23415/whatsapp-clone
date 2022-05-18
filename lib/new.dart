@@ -15,9 +15,13 @@ class NewApp extends StatefulWidget {
 class _NewAppState extends State<NewApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp(
       home: AppTitle(),
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
         );
   }
 }
